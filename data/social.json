@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "key": "instagram",
+    "name": "Instagram",
+    "username": "resalindo",
+    "link": "https://instagram.com",
+    "is_show": true
+  },
+  {
+    "id": "2",
+    "key": "facebook",
+    "name": "Facebook",
+    "username": "resalindo",
+    "link": "https://facebook.com",
+    "is_show": true
+  },
+  {
+    "id": "3",
+    "key": "linkedin",
+    "name": "Linkedin",
+    "username": "resalindo",
+    "link": "https://linkedin.com",
+    "is_show": true
+  }
+]
