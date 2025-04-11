@@ -8,7 +8,7 @@ import socials from "@/data/social.json"
 
 const Footer = () => {
   return (
-    <footer className="bg-[#5CC2A7]  flex flex-col sm:flex-row gap-5 sm:gap-0 justify-between md:items-center py-[3rem] md:px-[3rem] px-[2rem] font-interTight">
+    <footer className="bg-[#343434]  flex flex-col sm:flex-row gap-5 sm:gap-0 justify-between md:items-center py-[3rem] md:px-[3rem] px-[2rem] font-interTight text-white">
       <div className="flex flex-col gap-4">
         <div className="flex gap-4 items-center">
           <img
@@ -18,26 +18,30 @@ const Footer = () => {
           />
           <div className="border-r-[1px] border-gray-700 h-[4rem]" />
           <div className="flex flex-col w-[15rem]">
-            <p className="text-lg">Alamat</p>
+            <p className="text-lg uppercase">Head Office</p>
             <p className="text-[0.8rem] font-extralight">
-              {/* Ruko Newcastle B9 lt. 3,
-              Greenlake, Cipondoh,
-              Tangerang, 15147 */}
-              wlelellele
+              Komp. Griya Indah, Cipondoh, Tangerang Banten 15147
+            </p>
+          </div>
+          <div className="flex flex-col w-[15rem]">
+            <p className="text-lg uppercase">Workshop</p>
+            <p className="text-[0.8rem] font-extralight">
+              Jl. KH. Hasyim Ashari Kav. DPR, Blok B Cipondoh, Tangerang Banten 15148
             </p>
           </div>
         </div>
         <p className="text-[0.8rem] font-extralight">
-          Copyrights © 2025 MRLN Studio Powered by MRLN Studio.
+          Copyrights © 2025 All Rights Reserved by Resalindo Prima Mandiri
         </p>
       </div>
       <div className="flex flex-col gap-4">
         <div className="flex flex-col gap-2">
-          <p className="text-[0.9rem] font-extralight">
-            Phone: 0855140912u3
+          <p className="text-[0.9rem] font-extralight text-right">
+            Phone: +6221 557 44 763
           </p>
-          <p className="text-[0.9rem] font-extralight">
-            Email: iewiewnwinviw
+          <p className="text-[0.9rem] font-extralight text-right">+6221 222 60 666</p>
+          <p className="text-[0.9rem] font-extralight text-right">
+            Email: resalindo.969@gmail.com
           </p>
         </div>
 

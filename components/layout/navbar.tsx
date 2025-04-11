@@ -33,13 +33,13 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            href={"/portfolio"}
+            href={"/projects"}
             className={cn(
               "text-[1rem] hover:text-[#171717] underline-offset-4 text-[#343434] font-medium",
-              pathname.includes("portfolio") && "!text-black"
+              pathname.includes("projects") && "!text-black"
             )}
           >
-            Portfolio
+            Projects
           </Link>
           <Link
             href={"/about-us"}

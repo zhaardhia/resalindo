@@ -11,6 +11,7 @@ import Onboard from "@/components/pages/home/onboard";
 import ClientLogoCarousel from "@/components/pages/home/clients";
 import Achievements from "@/components/pages/home/achievements";
 import Service from "@/components/pages/home/services";
+import WhyChooseUs from "@/components/pages/home/why";
 
 export const dynamic = "force-static";
 // export const revalidate = 0
@@ -38,6 +39,7 @@ export default async function Home() {
         <ClientLogoCarousel />
         <Achievements />
         <Service />
+        <WhyChooseUs />
       </div>
     </LayoutPage>
   );
