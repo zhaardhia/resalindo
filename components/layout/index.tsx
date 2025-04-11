@@ -4,13 +4,14 @@ import Footer from "./footer";
 // import { getLayoutData } from "@/lib/queries/layout";
 type LayoutType = {
   children: React.ReactNode;
+  defaultTopHeight?: boolean
 };
 
-const LayoutPage = async ({ children }: LayoutType) => {
+const LayoutPage = async ({ children, defaultTopHeight = true }: LayoutType) => {
   return (
     <div>
       <Navbar />
-      <div className="h-36"></div>
+      {defaultTopHeight ? <div className="h-36"></div> : ''}
       <div className="overflow-hidden">{children}</div>
       <Footer />
     </div>

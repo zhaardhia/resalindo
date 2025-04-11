@@ -8,13 +8,13 @@ import socials from "@/data/social.json"
 
 const Footer = () => {
   return (
-    <footer className="bg-[#343434]  flex flex-col sm:flex-row gap-5 sm:gap-0 justify-between md:items-center py-[3rem] md:px-[3rem] px-[2rem] font-interTight text-white">
+    <footer className="bg-[#343434] flex flex-col md:flex-row gap-5 md:gap-0 justify-between md:items-center py-[3rem] md:px-[3rem] px-[2rem] font-interTight text-white">
       <div className="flex flex-col gap-4">
         <div className="flex gap-4 items-center">
           <img
-            src="/muralin/muralin-logo.png"
-            alt="muralin"
-            className="w-[7rem] h-[3.5rem]"
+            src="/rpm/rpm-logo-white.png"
+            alt="resalindo"
+            className="w-14 h-14"
           />
           <div className="border-r-[1px] border-gray-700 h-[4rem]" />
           <div className="flex flex-col w-[15rem]">
@@ -30,17 +30,17 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <p className="text-[0.8rem] font-extralight">
+        <p className="text-[0.8rem] font-extralight md:block hidden">
           Copyrights © 2025 All Rights Reserved by Resalindo Prima Mandiri
         </p>
       </div>
       <div className="flex flex-col gap-4">
         <div className="flex flex-col gap-2">
-          <p className="text-[0.9rem] font-extralight text-right">
+          <p className="text-[0.9rem] font-extralight md:text-right">
             Phone: +6221 557 44 763
           </p>
-          <p className="text-[0.9rem] font-extralight text-right">+6221 222 60 666</p>
-          <p className="text-[0.9rem] font-extralight text-right">
+          <p className="text-[0.9rem] font-extralight md:text-right">+6221 222 60 666</p>
+          <p className="text-[0.9rem] font-extralight md:text-right">
             Email: resalindo.969@gmail.com
           </p>
         </div>
@@ -103,6 +103,9 @@ const Footer = () => {
           <Icon icon={'logos:youtube-icon'} className='text-white text-xl'/> */}
         </div>
       </div>
+      <p className="text-sm font-extralight md:hidden block">
+        Copyrights © 2025 All Rights Reserved by Resalindo Prima Mandiri
+      </p>
     </footer>
   );
 };
