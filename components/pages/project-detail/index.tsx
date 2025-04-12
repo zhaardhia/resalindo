@@ -1,6 +1,8 @@
 // components/ProjectDetail.tsx
 'use client';
 
+import { MoveRight } from 'lucide-react';
+import Link from 'next/link';
 import { useState } from 'react';
 
 const imagePlaceholders = [
@@ -93,18 +95,26 @@ export default function ProjectDetail() {
           </div>
 
           {/* Next Project */}
-          <div>
-            <h3 className="text-sm font-medium mb-2">Next Project</h3>
+          <Link href='/projects/yyy' className='mt-5'>
+            <h3 className="text-md font-medium mb-2 flex justify-between items-center">
+              Next Project
+              <MoveRight />
+            </h3>
             <div className="flex flex-col gap-4">
               <div className="w-full aspect-square bg-gray-300 rounded-md shrink-0">
                 <img src="/rpm/render-example-design.png" alt="" className="w-full h-full object-cover" />
               </div>
-              <div>
-                <p className="font-semibold text-sm">Lorem Ipsum Dolor</p>
-                <p className="text-xs text-gray-400">Jakarta, 2021</p>
+              <div className='flex justify-between'>
+                <div>
+                  <p className="font-semibold text-sm">Lorem Ipsum Dolor</p>
+                  <p className="text-xs text-gray-400">Jakarta, 2021</p>
+                </div>
+                <div>
+                  <button className="bg-[#8E8B82] text-white text-sm md:px-10 px-5 py-1 rounded-2xl mb-2">Design</button>
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
 

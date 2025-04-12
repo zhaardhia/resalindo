@@ -7,7 +7,7 @@ import Socials from '@/components/socials';
 const Onboard = () => {
   return (
     <div className=''>
-      <div className='flex flex-col max-w-[700px] mx-auto gap-5'>
+      <div className='flex flex-col max-w-[700px] mx-auto gap-5 px-5'>
         <p className='font-light text-center text-xl text-[#343434]'>GENERAL CONTRACTOR - ARCHITECTURE & DESIGN</p>
         <h2 className='text-5xl font-semibold text-center text-[#343434]'>PT. Resalindo Prima Mandiri</h2>
         <p className='text-center text-[#8E8B82] font-light'>PT. RPM is a lalalal tralala trilili, With experiences and professional team,
@@ -25,7 +25,7 @@ const Onboard = () => {
           </Button>
         </Link>
       </div>
-      <div className='w-[80%] max-w-6xl h-auto mx-auto p-8 pb-0 shadow-lg'
+      <div className='md:w-[80%] w-[95%] max-w-6xl h-auto mx-auto p-8 pb-0 shadow-lg'
         style={{
           background: 'linear-gradient(to bottom, white 40%, #e0e0e0 50%, #c0c0c0 100%)'
         }}

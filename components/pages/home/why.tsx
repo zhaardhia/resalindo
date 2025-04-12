@@ -32,7 +32,7 @@ export default function WhyChooseUs() {
       ></div>
       */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
-        <h2 className="text-4xl font-bold text-gray-800 mb-8">Why Choose Us</h2>
+        <h2 className="md:text-4xl text-2xl font-bold text-gray-800 mb-8">Why Choose Us</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5">
           {why.map((_, index) => (
             <div

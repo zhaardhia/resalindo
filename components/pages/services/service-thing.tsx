@@ -17,14 +17,14 @@ const ServiceThing: React.FC<ServiceThingType> = ({ name, things, urlImg, contac
     <div className={cn(
       'min-h-[650px] max-w-6xl mx-auto my-auto flex flex-col justify-center gap-14 text-[#343434] px-5 md:py-0 py-14',
     )}>
-      <div className='text-5xl flex items-center justify-center gap-5 uppercase'>
-        <img src={urlImg} alt="" className='w-[4rem]' />
+      <div className='md:text-5xl text-3xl flex items-center justify-center gap-5 uppercase'>
+        <img src={urlImg} alt="" className='md:w-[4rem] w-[2rem]' />
         {name}
       </div>
       <div className='flex justify-center sm:gap-5 gap-10 text-center sm:flex-row flex-col'>
         {things.map((thing) => (
           <div className='flex flex-col gap-5'>
-            <p className='text-3xl'>{thing.title}</p>
+            <p className='md:text-3xl text-2xl'>{thing.title}</p>
             <p className='font-light'>{thing.description}</p>
           </div>
         ))}

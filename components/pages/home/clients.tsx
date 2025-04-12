@@ -76,13 +76,13 @@ const ClientLogoCarousel = () => {
           >
             <CarouselContent>
               {clients.map((client) => (
-                <CarouselItem key={client.id} className="md:basis-1/3 lg:basis-1/5 flex justify-center items-center">
+                <CarouselItem key={client.id} className="md:basis-1/3 lg:basis-1/5 basis-1/3 flex justify-center items-center">
                   <div className="">
                     {/* <div className="flex flex-col items-center justify-center h-24 bg-gray-300 rounded-md">
                       <div className="w-10 h-10 bg-gray-400 rounded-md mb-2"></div>
                       <span className="text-xs font-medium text-gray-600">{client.name}</span>
                     </div> */}
-                    <img src={client.url} alt="" className='h-20 object-contain' />
+                    <img src={client.url} alt="" className='md:h-20 h-12 object-contain' />
                   </div>
                 </CarouselItem>
               ))}

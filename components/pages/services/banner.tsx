@@ -3,7 +3,7 @@ import React from 'react'
 const Banner = () => {
   return (
     <div className='w-full min-h-screen object-cover h-auto mx-auto p-8 flex justify-center items-center flex-col gap-12 bg-[url("/assets/services-rpm.png")] bg-cover bg-center'>
-      <div className='flex flex-col gap-8 text-center max-w-2xl'>
+      <div className='flex flex-col gap-8 text-center max-w-2xl mt-10'>
         <p className='text-5xl'>Our Services</p>
         <p className='font-light'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
       </div>

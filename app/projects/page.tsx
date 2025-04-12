@@ -13,7 +13,7 @@ export default function OurWorks() {
     <LayoutPage>
       <div className="min-h-screen px-5 md:px-16 pb-10">
         <div className="max-w-7xl mx-auto">
-          <div className="flex justify-between items-start mb-8">
+          <div className="flex justify-between items-start mb-8 sm:flex-row flex-col sm:gap-0 gap-4">
             <h2 className="text-3xl font-bold">Our Works</h2>
             <div className="text-left flex gap-4">
               <div>

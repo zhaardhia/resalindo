@@ -45,14 +45,14 @@ export default function Step() {
     <div className="max-w-7xl mx-auto px-4 pt-10 pb-24">
       <h2 className="text-4xl font-bold mb-20 text-center">How We Proceed Our Client</h2>
       <div className="flex gap-20 md:flex-row flex-col mx-auto justify-center">
-        <div className="w-[45%] flex justify-center items-center">
-          <div className="bg-gray-500 rounded-xl max-w-[25rem] max-h-[25rem] w-full h-full aspect-square my-auto">
+        <div className="md:w-[45%] flex justify-center items-center">
+          <div className="bg-gray-500 rounded-xl md:max-w-[25rem] max-h-[25rem] w-full h-full aspect-square my-auto">
             <img src="/rpm/proceed-client.png" alt="" className="w-full h-full object-cover rounded-xl" />
           </div>
         </div>
 
         {/* Timeline */}
-        <div className="flex flex-col items-start relative justify-between gap-5 w-[55%]">
+        <div className="flex flex-col items-start relative justify-between gap-5 md:w-[55%]">
           <div className="absolute top-4 bottom-4 left-[0.9rem] w-1 bg-gray-300 z-0 h-full" />
           {data.map((item, index) => (
             <div
