@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 const faqs = [
   {
@@ -18,14 +20,20 @@ export default function FAQSection() {
   const [openIndex] = useState(0); // only default open the first
 
   return (
-    <div className="max-w-6xl mx-auto px-4 pt-10 pb-20">
+    <div className="max-w-6xl mx-auto px-4 pt-36 pb-20">
       <div className="text-center mb-24">
         <h2 className="text-6xl md:text-4xl font-semibold mb-10">
           Need Free Consultation and <br /> More Info?
         </h2>
-        <button className="bg-black text-white px-4 py-2 rounded-full text-sm font-semibold inline-flex items-center gap-2">
+        <Link href={'/contact-us'} className=''>
+          <Button className='w-fit px-4 py-5 rounded-full mx-auto bg-[#343434]'>
+            Contact Us
+            <ArrowUpRight size={16} />
+          </Button>
+        </Link>
+        {/* <button className="bg-black text-white px-4 py-2 rounded-full text-sm font-semibold inline-flex items-center gap-2">
           Contact Us <ArrowUpRight size={16} />
-        </button>
+        </button> */}
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center min-h-[25rem]">

@@ -42,7 +42,7 @@ export default function OurWorks() {
                   className="bg-gray-300 w-full aspect-[4/3] rounded-lg overflow-hidden shadow-md"
                 >
                   {/* <div className="bg-gray-300 h-48 w-full" /> */}
-                  
+                  <img src="/rpm/render-example-design.png" alt="" className="w-full h-full object-cover" />
                 </div>
                 <div className="p-2 flex justify-between">
                   <div>

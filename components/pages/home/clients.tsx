@@ -14,13 +14,14 @@ import Autoplay from "embla-carousel-autoplay"
 const ClientLogoCarousel = () => {
   // Mock client data with names
   const clients = [
-    { id: 1, name: 'SERPONG' },
-    { id: 2, name: 'SUMMARECON' },
-    { id: 3, name: 'BANK BRI' },
-    { id: 4, name: 'ADHI CITY' },
-    { id: 5, name: 'BIZLAND JAYA' },
-    { id: 6, name: 'CIFO' },
-    { id: 7, name: 'LANDMARK' },
+    { id: 1, name: 'BIZHUB', url: '/clients/bizhub.png' },
+    { id: 2, name: 'SUMMARECON', url: '/clients/sms.png' },
+    { id: 3, name: 'BANK BRI', url: '/clients/bri.png' },
+    { id: 4, name: 'ADHI CITY', url: '/clients/adhisentul.png' },
+    { id: 5, name: 'BIZLAND JAYA', url: '/clients/bizland.png' },
+    { id: 6, name: 'CRIO', url: '/clients/crio.png' },
+    { id: 7, name: 'DINAMIKA', url: '/clients/dinamika.png' },
+    { id: 8, name: 'COUNTRYWOODS', url: '/clients/countrywoods.png' },
   ];
 
   return (
@@ -75,12 +76,13 @@ const ClientLogoCarousel = () => {
           >
             <CarouselContent>
               {clients.map((client) => (
-                <CarouselItem key={client.id} className="md:basis-1/3 lg:basis-1/5">
-                  <div className="p-1">
-                    <div className="flex flex-col items-center justify-center h-24 bg-gray-300 rounded-md">
+                <CarouselItem key={client.id} className="md:basis-1/3 lg:basis-1/5 flex justify-center items-center">
+                  <div className="">
+                    {/* <div className="flex flex-col items-center justify-center h-24 bg-gray-300 rounded-md">
                       <div className="w-10 h-10 bg-gray-400 rounded-md mb-2"></div>
                       <span className="text-xs font-medium text-gray-600">{client.name}</span>
-                    </div>
+                    </div> */}
+                    <img src={client.url} alt="" className='h-20 object-contain' />
                   </div>
                 </CarouselItem>
               ))}

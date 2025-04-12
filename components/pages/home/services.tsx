@@ -14,9 +14,9 @@ const Service = () => {
         </p>
         
         {/* Service Cards */}
-        <div className="flex justify-center gap-10 mb-16">
+        <div className="flex justify-center gap-14 mb-16">
           {/* Design Card */}
-          <div className="bg-white py-8 rounded w-full max-w-[220px] h-[250px] flex flex-col justify-center items-center gap-5">
+          <div className="bg-white py-8 rounded w-full max-w-[240px] h-[250px] flex flex-col justify-center items-center gap-5">
             <div className="flex justify-center items-center">
               <Home className="h-16 w-16 text-gray-600" />
             </div>
@@ -24,7 +24,7 @@ const Service = () => {
           </div>
           
           {/* Maintenance Card */}
-          <div className="bg-white py-8 rounded w-full max-w-[220px] h-[250px] flex flex-col justify-center items-center gap-5">
+          <div className="bg-white py-8 rounded w-full max-w-[240px] h-[250px] flex flex-col justify-center items-center gap-5">
             <div className="flex justify-center items-center">
               <ClipboardList className="h-16 w-16 text-gray-600" />
             </div>
@@ -32,7 +32,7 @@ const Service = () => {
           </div>
           
           {/* Build Card */}
-          <div className="bg-white py-8 rounded w-full max-w-[220px] h-[250px] flex flex-col justify-center items-center gap-5">
+          <div className="bg-white py-8 rounded w-full max-w-[240px] h-[250px] flex flex-col justify-center items-center gap-5">
             <div className="flex justify-center items-center">
               <ClipboardList className="h-16 w-16 text-gray-600" />
             </div>
@@ -42,17 +42,17 @@ const Service = () => {
         
         {/* Service Categories - First Row */}
         <div className="flex flex-wrap justify-center text-gray-300 mb-4">
-          <div className="px-4 py-2">Architectural Design</div>
-          <div className="px-4 py-2 border-l border-gray-600">Interior Design</div>
-          <div className="px-4 py-2 border-l border-gray-600">Structure Planner</div>
+          <div className="px-4 py-2 hover:text-gray-100 cursor-pointer">Architectural Design</div>
+          <div className="px-4 py-2 border-l border-gray-600 hover:text-gray-100 cursor-pointer">Interior Design</div>
+          <div className="px-4 py-2 border-l border-gray-600 hover:text-gray-100 cursor-pointer">Structure Planner</div>
         </div>
         
         {/* Service Categories - Second Row */}
         <div className="flex flex-wrap justify-center text-gray-300">
-          <div className="px-4 py-2">New Construction</div>
-          <div className="px-4 py-2 border-l border-gray-600">Cekrumahku.id</div>
-          <div className="px-4 py-2 border-l border-gray-600">Renovation</div>
-          <div className="px-4 py-2 border-l border-gray-600">Material Support</div>
+          <div className="px-4 py-2 hover:text-gray-100 cursor-pointer">New Construction</div>
+          <div className="px-4 py-2 border-l border-gray-600 hover:text-gray-100 cursor-pointer">Cekrumahku.id</div>
+          <div className="px-4 py-2 border-l border-gray-600 hover:text-gray-100 cursor-pointer">Renovation</div>
+          <div className="px-4 py-2 border-l border-gray-600 hover:text-gray-100 cursor-pointer">Material Support</div>
         </div>
       </div>
     </div>

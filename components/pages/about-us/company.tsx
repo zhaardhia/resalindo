@@ -2,6 +2,7 @@ import React from 'react'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { Phone } from 'lucide-react'
+import Socials from '@/components/socials'
 
 const Company = () => {
   return (
@@ -17,6 +18,7 @@ const Company = () => {
           <h2 className='text-4xl font-semibold'>PT. Resalindo Prima Mandiri</h2>
           <p>RPM is a general contractor company that operates in architecture and design, construction services, interior design, structure planner, real estate, and warehouse. We offer our services for private to public companies in all types of business that related to construction services, whether renovation or new building services.</p>
           <p>RPM builds good reputation in construction services, with the aim of creating as well as offering solutions for our clients. We are looking forward to and provide services in the present until years to come, as an attempt to participate in advancing the development in Indonesia.</p>
+          <Socials className='justify-start' />
         </div>
       </div>
       <Link href={'/contact-us'} className='mx-auto'>

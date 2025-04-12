@@ -46,7 +46,9 @@ export default function Step() {
       <h2 className="text-4xl font-bold mb-20 text-center">How We Proceed Our Client</h2>
       <div className="flex gap-20 md:flex-row flex-col mx-auto justify-center">
         <div className="w-[45%] flex justify-center items-center">
-          <div className="bg-gray-500 rounded-xl max-w-[25rem] max-h-[25rem] w-full h-full aspect-square my-auto"></div>
+          <div className="bg-gray-500 rounded-xl max-w-[25rem] max-h-[25rem] w-full h-full aspect-square my-auto">
+            <img src="/rpm/proceed-client.png" alt="" className="w-full h-full object-cover rounded-xl" />
+          </div>
         </div>
 
         {/* Timeline */}

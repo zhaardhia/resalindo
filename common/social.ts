@@ -1,3 +1,6 @@
+import { ReactNode } from "react";
+import Instagram from "@/components/socials/instagram";
+
 type SocialType = {
   key: string;
   name: string;
@@ -10,7 +13,7 @@ export const SOCIALLIST: SocialType[] = [
     key: "instagram",
     name: "Instagram",
     logo: "mdi:instagram",
-    color: "text-black"
+    color: "text-black",
   },
   {
     key: "email",

@@ -26,17 +26,27 @@ export default function ProjectDetail() {
         <div className="flex flex-col gap-2">
           <div className=' flex gap-2'>
             <div className='flex flex-col gap-2 w-[37%]'>
-              <div className='aspect-square w-full bg-gray-300 rounded-md transform transition-all duration-300 ease-in-out'></div>
-              <div className='aspect-square w-full bg-gray-300 rounded-md transform transition-all duration-300 ease-in-out'></div>
+              <div className='aspect-square w-full bg-gray-300 rounded-md transform transition-all duration-300 ease-in-out'>
+                <img src="/rpm/render-example-design.png" alt="" className="w-full h-full object-cover" />
+              </div>
+              <div className='aspect-square w-full bg-gray-300 rounded-md transform transition-all duration-300 ease-in-out'>
+                <img src="/rpm/render-example-design.png" alt="" className="w-full h-full object-cover" />
+              </div>
             </div>
             <div className='aspect-square w-[75%] h-auto bg-gray-300 rounded-md transform transition-all duration-300 ease-in-out'>
-
+              <img src="/rpm/render-example-design.png" alt="" className="w-full h-full object-cover" />
             </div>
           </div>
           <div className='flex gap-2'>
-            <div className='aspect-square w-full bg-gray-300 rounded-md transform transition-all duration-300 ease-in-out'></div>
-            <div className='aspect-square w-full bg-gray-300 rounded-md transform transition-all duration-300 ease-in-out'></div>
-            <div className='aspect-square w-full bg-gray-300 rounded-md transform transition-all duration-300 ease-in-out'></div>
+            <div className='aspect-square w-full bg-gray-300 rounded-md transform transition-all duration-300 ease-in-out'>
+              <img src="/rpm/render-example-design.png" alt="" className="w-full h-full object-cover" />
+            </div>
+            <div className='aspect-square w-full bg-gray-300 rounded-md transform transition-all duration-300 ease-in-out'>
+              <img src="/rpm/render-example-design.png" alt="" className="w-full h-full object-cover" />
+            </div>
+            <div className='aspect-square w-full bg-gray-300 rounded-md transform transition-all duration-300 ease-in-out'>
+              <img src="/rpm/render-example-design.png" alt="" className="w-full h-full object-cover" />
+            </div>
           </div>
           {/* {imagePlaceholders.map((_, i) => (
             <div
@@ -86,7 +96,9 @@ export default function ProjectDetail() {
           <div>
             <h3 className="text-sm font-medium mb-2">Next Project</h3>
             <div className="flex flex-col gap-4">
-              <div className="w-full aspect-square bg-gray-300 rounded-md shrink-0" />
+              <div className="w-full aspect-square bg-gray-300 rounded-md shrink-0">
+                <img src="/rpm/render-example-design.png" alt="" className="w-full h-full object-cover" />
+              </div>
               <div>
                 <p className="font-semibold text-sm">Lorem Ipsum Dolor</p>
                 <p className="text-xs text-gray-400">Jakarta, 2021</p>
