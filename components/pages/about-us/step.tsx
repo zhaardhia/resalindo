@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import ClientContainerAnimate from "@/components/client-container-animate";
 
 const data = [
   {
@@ -46,13 +47,13 @@ export default function Step() {
       <h2 className="text-4xl font-bold mb-20 text-center">How We Proceed Our Client</h2>
       <div className="flex gap-20 md:flex-row flex-col mx-auto justify-center">
         <div className="md:w-[45%] flex justify-center items-center">
-          <div className="bg-gray-500 rounded-xl md:max-w-[25rem] max-h-[25rem] w-full h-full aspect-square my-auto">
+          <ClientContainerAnimate direction="right" className="bg-gray-500 rounded-xl md:max-w-[25rem] max-h-[25rem] w-full h-full aspect-square my-auto">
             <img src="/rpm/proceed-client.png" alt="" className="w-full h-full object-cover rounded-xl" />
-          </div>
+          </ClientContainerAnimate>
         </div>
 
         {/* Timeline */}
-        <div className="flex flex-col items-start relative justify-between gap-5 md:w-[55%]">
+        <ClientContainerAnimate direction="above" className="flex flex-col items-start relative justify-between gap-5 md:w-[55%]">
           <div className="absolute top-4 bottom-4 left-[0.9rem] w-1 bg-gray-300 z-0 h-full" />
           {data.map((item, index) => (
             <div
@@ -88,7 +89,7 @@ export default function Step() {
               </AnimatePresence>
             </div>
           ))}
-        </div>
+        </ClientContainerAnimate>
 
         {/* Project list with animation */}
         {/* <div className="flex-1 min-h-[200px]">

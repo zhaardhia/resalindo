@@ -1,4 +1,5 @@
-// components/WhyChooseUs.tsx
+import FadeBox from "@/components/fade-box";
+
 export default function WhyChooseUs() {
   const why = [
     {
@@ -35,14 +36,15 @@ export default function WhyChooseUs() {
         <h2 className="md:text-4xl text-2xl font-bold text-gray-800 mb-8">Why Choose Us</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5">
           {why.map((_, index) => (
-            <div
+            <FadeBox
+              delay={`${index + 1}00ms`}
               key={index}
               className="bg-white px-2 py-4 rounded-lg shadow flex flex-col items-center justify-between text-center gap-4"
             >
               {/* <div className="w-20 h-20 bg-gray-300 mb-4 rounded"></div> */}
               <img src={_.url} alt="" className="h-24" />
               <p className="text-md whitespace-pre-line text-gray-700">{_.label}</p>
-            </div>
+            </FadeBox>
           ))}
         </div>
       </div>

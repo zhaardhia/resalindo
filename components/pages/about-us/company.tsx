@@ -3,10 +3,11 @@ import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { Phone } from 'lucide-react'
 import Socials from '@/components/socials'
+import ClientContainerAnimate from '@/components/client-container-animate'
 
 const Company = () => {
   return (
-    <div className='max-w-6xl mx-auto px-4 pb-10 flex flex-col gap-10'>
+    <ClientContainerAnimate direction='above' className='max-w-6xl mx-auto px-4 pb-10 flex flex-col gap-10'>
       <div className='flex md:gap-16 gap-10 justify-center items-center sm:flex-row flex-col'>
         {/* <img src="https://static.wixstatic.com/media/11062b_cdd6cc16a4774c939d5e87d02e43403ef000.jpg/v1/fill/w_490,h_721,al_c,q_80,usm_0.33_1.00_0.00,enc_avif,quality_auto/11062b_cdd6cc16a4774c939d5e87d02e43403ef000.jpg" alt="" className='w-[40%]' /> */}
         <div className=''>
@@ -29,7 +30,7 @@ const Company = () => {
           Contact Us
         </Button>
       </Link>
-    </div>
+    </ClientContainerAnimate>
   )
 }
 

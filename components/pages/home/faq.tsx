@@ -4,6 +4,8 @@ import { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import ClientContainerAnimate from "@/components/client-container-animate";
+import FadeBox from "@/components/fade-box";
 
 const faqs = [
   {
@@ -37,15 +39,16 @@ export default function FAQSection() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center min-h-[25rem]">
-        <div className="md:text-5xl text-3xl font-bold leading-tight text-center md:text-start">
+        <ClientContainerAnimate direction='right' className="md:text-5xl text-3xl font-bold leading-tight text-center md:text-start">
           <span className="md:block">Frequently</span>
           <span className="md:block md:mx-0 mx-2">Asked</span>
           <span className="block">Questions</span>
-        </div>
+        </ClientContainerAnimate>
 
         <div className="md:col-span-2 space-y-4">
           {faqs.map((item, index) => (
-            <div
+            <FadeBox
+              delay={`${index + 1}00ms`}
               key={index}
               className={`border-b pb-4 transition-all duration-300 cursor-pointer ${
                 index === openIndex ? "pt-0" : "pt-2"
@@ -59,7 +62,7 @@ export default function FAQSection() {
               )) ?? (
                 <div className="text-sm text-gray-700 block">{item.answer}</div>
               )}
-            </div>
+            </FadeBox>
           ))}
         </div>
       </div>

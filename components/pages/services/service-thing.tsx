@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button'
 import { Phone } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
+import FadeBox from '@/components/fade-box'
 
 type ServiceThingType = {
   name: string;
@@ -21,12 +22,12 @@ const ServiceThing: React.FC<ServiceThingType> = ({ name, things, urlImg, contac
         <img src={urlImg} alt="" className='md:w-[4rem] w-[2rem]' />
         {name}
       </div>
-      <div className='flex justify-center sm:gap-5 gap-10 text-center sm:flex-row flex-col'>
-        {things.map((thing) => (
-          <div className='flex flex-col gap-5'>
+      <div className='flex justify-center sm:gap-7 gap-10 text-center sm:flex-row flex-col'>
+        {things.map((thing, index) => (
+          <FadeBox delay={`${index + 1}00ms`} className='flex flex-col gap-5'>
             <p className='md:text-3xl text-2xl'>{thing.title}</p>
             <p className='font-light'>{thing.description}</p>
-          </div>
+          </FadeBox>
         ))}
       </div>
       <Link href={url} target={url.includes('https') ? '_blank' : '_self'} className='mx-auto'>

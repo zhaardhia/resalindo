@@ -1,6 +1,7 @@
 // ServiceSection.jsx
 import React from 'react';
 import { Home, ClipboardList } from 'lucide-react';
+import ClientContainerAnimate from '@/components/client-container-animate';
 
 const Service = () => {
   return (
@@ -16,28 +17,28 @@ const Service = () => {
         {/* Service Cards */}
         <div className="flex justify-center md:gap-14 sm:gap-5 gap-2 mb-16 flex-row">
           {/* Design Card */}
-          <div className="bg-white md:py-8 py-4 rounded w-full max-w-[240px] md:h-[250px] h-[150px] flex flex-col justify-center items-center gap-5">
+          <ClientContainerAnimate direction='right' className="bg-white md:py-8 py-4 rounded w-full max-w-[240px] md:h-[250px] h-[150px] flex flex-col justify-center items-center gap-5">
             <div className="flex justify-center items-center">
               <Home className="md:h-16 md:w-16 w-10 h-10 text-gray-600" />
             </div>
             <h3 className="md:text-xl sm:text-md text-sm font-medium text-gray-600 uppercase">Design</h3>
-          </div>
+          </ClientContainerAnimate>
           
           {/* Maintenance Card */}
-          <div className="bg-white md:py-8 py-4 rounded w-full max-w-[240px] md:h-[250px] h-[150px] flex flex-col justify-center items-center gap-5">
+          <ClientContainerAnimate direction='above' className="bg-white md:py-8 py-4 rounded w-full max-w-[240px] md:h-[250px] h-[150px] flex flex-col justify-center items-center gap-5">
             <div className="flex justify-center items-center">
               <ClipboardList className="md:h-16 md:w-16 w-10 h-10 text-gray-600" />
             </div>
             <h3 className="md:text-xl sm:text-md text-sm font-medium text-gray-600 uppercase">Maintenance</h3>
-          </div>
+          </ClientContainerAnimate>
           
           {/* Build Card */}
-          <div className="bg-white md:py-8 py-4 rounded w-full max-w-[240px] md:h-[250px] h-[150px] flex flex-col justify-center items-center gap-5">
+          <ClientContainerAnimate direction='left' className="bg-white md:py-8 py-4 rounded w-full max-w-[240px] md:h-[250px] h-[150px] flex flex-col justify-center items-center gap-5">
             <div className="flex justify-center items-center">
               <ClipboardList className="md:h-16 md:w-16 w-10 h-10 text-gray-600" />
             </div>
             <h3 className="md:text-xl sm:text-md text-sm font-medium text-gray-600 uppercase">Build</h3>
-          </div>
+          </ClientContainerAnimate>
         </div>
         
         {/* Service Categories - First Row */}

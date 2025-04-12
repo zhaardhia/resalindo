@@ -1,6 +1,8 @@
 import LayoutPage from "@/components/layout";
 import TimelineSection from "@/components/pages/project/timeline-project";
 import Link from "next/link";
+import FadeBox from "@/components/fade-box";
+
 export default function OurWorks() {
   const works = Array.from({ length: 12 }, (_, i) => ({
     id: i + 1,
@@ -35,26 +37,27 @@ export default function OurWorks() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {works.map((work) => (
-              <Link href={'/projects/xxx'}>
-                <div
-                  key={work.id}
-                  className="bg-gray-300 w-full aspect-[4/3] rounded-lg overflow-hidden shadow-md"
-                >
-                  {/* <div className="bg-gray-300 h-48 w-full" /> */}
-                  <img src="/rpm/render-example-design.png" alt="" className="w-full h-full object-cover" />
-                </div>
-                <div className="p-2 flex justify-between">
-                  <div>
-                    <h3 className="text-md font-semibold">{work.title}</h3>
-                    <p className="text-sm text-gray-500 mb-2">{work.date}</p>
+            {works.map((work, index) => (
+              <FadeBox delay={`${index + 1}00ms`}>
+                <Link href={'/projects/xxx'}>
+                  <div
+                    key={work.id}
+                    className="bg-gray-300 w-full aspect-[4/3] rounded-lg overflow-hidden shadow-md"
+                  >
+                    {/* <div className="bg-gray-300 h-48 w-full" /> */}
+                    <img src="/rpm/render-example-design.png" alt="" className="w-full h-full object-cover" />
                   </div>
-                  <span className="flex justify-center items-center bg-gray-800 text-white text-xs font-medium w-[5rem] py-2 rounded-full h-fit">
-                    {work.tag}
-                  </span>
-                </div>
-              </Link>
-              
+                  <div className="p-2 flex justify-between">
+                    <div>
+                      <h3 className="text-md font-semibold">{work.title}</h3>
+                      <p className="text-sm text-gray-500 mb-2">{work.date}</p>
+                    </div>
+                    <span className="flex justify-center items-center bg-gray-800 text-white text-xs font-medium w-[5rem] py-2 rounded-full h-fit">
+                      {work.tag}
+                    </span>
+                  </div>
+                </Link>
+              </FadeBox>
             ))}
           </div>
         </div>

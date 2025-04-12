@@ -1,4 +1,5 @@
 import React from 'react'
+import FadeBox from '@/components/fade-box';
 
 const Banner = () => {
   return (
@@ -8,9 +9,9 @@ const Banner = () => {
         <p className='font-light'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
       </div>
       <div className="flex flex-wrap justify-center text-[#343434] sm:text-xl text-md mb-4">
-        <div className="sm:px-10 px-5 py-2">Design</div>
-        <div className="sm:px-10 px-5 py-2 border-l border-[#343434]">Maintenance</div>
-        <div className="sm:px-10 px-5 py-2 border-l border-[#343434]">Build</div>
+        <FadeBox delay='100ms' className="sm:px-10 px-5 py-2">Design</FadeBox>
+        <FadeBox delay='150ms' className="sm:px-10 px-5 py-2 border-l border-[#343434]">Maintenance</FadeBox>
+        <FadeBox delay='200ms' className="sm:px-10 px-5 py-2 border-l border-[#343434]">Build</FadeBox>
       </div>
     </div>
   )
