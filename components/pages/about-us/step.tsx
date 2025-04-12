@@ -36,13 +36,13 @@ export default function Step() {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % data.length);
-    }, 10000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-10">
+    <div className="max-w-7xl mx-auto px-4 pt-10 pb-24">
       <h2 className="text-4xl font-bold mb-20 text-center">How We Proceed Our Client</h2>
       <div className="flex gap-20 md:flex-row flex-col mx-auto justify-center">
         <div className="w-[45%] flex justify-center items-center">

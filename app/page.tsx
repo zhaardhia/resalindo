@@ -12,6 +12,7 @@ import ClientLogoCarousel from "@/components/pages/home/clients";
 import Achievements from "@/components/pages/home/achievements";
 import Service from "@/components/pages/home/services";
 import WhyChooseUs from "@/components/pages/home/why";
+import FAQSection from "@/components/pages/home/faq";
 
 export const dynamic = "force-static";
 // export const revalidate = 0
@@ -22,11 +23,12 @@ export const generateMetadata = async ({
   searchParams,
 }: ParamsType): Promise<Metadata> => {
   return {
-    title: `Kami Muralin`,
-    icons: '/muralin-favicon.png',
+    title: `Resalindo Prima Mandiri`,
+    icons: '/rpm/logo-rpm.png',
     description: '',
     keywords:
-      'muralin, kami muralin, kamimuralin, mural, jasa mural, jasa buat mural',
+      // 'muralin, kami muralin, kamimuralin, mural, jasa mural, jasa buat mural',
+      ''
   };
 };
 
@@ -40,6 +42,7 @@ export default async function Home() {
         <Achievements />
         <Service />
         <WhyChooseUs />
+        <FAQSection />
       </div>
     </LayoutPage>
   );

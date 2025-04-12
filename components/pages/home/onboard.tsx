@@ -3,6 +3,8 @@ import socials from "@/data/social.json"
 import { SOCIALLIST } from '@/common/social';
 import { Icon } from '@iconify/react';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import { Phone } from 'lucide-react';
 
 const Onboard = () => {
   return (
@@ -31,11 +33,18 @@ const Onboard = () => {
           })}
           
         </div>
-        <Button className='w-fit px-5 rounded-xl mx-auto'>
-          Contact Us
-        </Button>
+
+        <Link href={'/contact-us'} className='mx-auto'>
+          <Button className='w-fit px-4 py-5 rounded-full mx-auto bg-[#343434]'>
+            <div className='w-6 h-6 rounded-full bg-white flex justify-center items-center'>
+              <Phone className=' text-[#343434]' fill='#343434' />
+            </div>
+            Contact Us
+          </Button>
+        </Link>
+
       </div>
-      <div className='w-[80%] max-w-[1000px] h-auto mx-auto p-8 pb-0 shadow-lg'
+      <div className='w-[80%] max-w-6xl h-auto mx-auto p-8 pb-0 shadow-lg'
         style={{
           background: 'linear-gradient(to bottom, white 40%, #e0e0e0 50%, #c0c0c0 100%)'
         }}

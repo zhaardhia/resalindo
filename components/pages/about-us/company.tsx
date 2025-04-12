@@ -1,5 +1,7 @@
 import React from 'react'
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
+import { Phone } from 'lucide-react'
 
 const Company = () => {
   return (
@@ -17,9 +19,14 @@ const Company = () => {
           <p>RPM builds good reputation in construction services, with the aim of creating as well as offering solutions for our clients. We are looking forward to and provide services in the present until years to come, as an attempt to participate in advancing the development in Indonesia.</p>
         </div>
       </div>
-      <Button className='w-fit px-5 rounded-xl mx-auto'>
-        Contact Us
-      </Button>
+      <Link href={'/contact-us'} className='mx-auto'>
+        <Button className='w-fit px-4 py-5 rounded-full mx-auto bg-[#343434]'>
+          <div className='w-6 h-6 rounded-full bg-white flex justify-center items-center'>
+            <Phone className=' text-[#343434]' fill='#343434' />
+          </div>
+          Contact Us
+        </Button>
+      </Link>
     </div>
   )
 }

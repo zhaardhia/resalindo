@@ -90,3 +90,34 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* hamburger menu */
+.navbar-toggle {
+  display: flex;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.navbar-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: rgb(10, 10, 10);
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+.span-first {
+  transform-origin: 0 0;
+}
+.span-third {
+  transform-origin: 0 100%;
+}
+.span-first-active {
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+.span-third-active {
+  transform: rotate(-45deg) translate(-1px, 0);
+}

@@ -59,10 +59,10 @@ const Navbar = () => {
           >
             Services
           </Link>
-          <a
+          <Link
             // href={`https://wa.me/${normalizePhoneNumber(dataWhatsapp!)}`}
             // href={catalog_link}
-            target="_blank"
+            href="/contact-us"
           >
             <Button
               // variant={"outline"}
@@ -73,7 +73,7 @@ const Navbar = () => {
               {/* <Icon icon="mingcute:document-3-line" className="text-xl" /> */}
               Contact Us
             </Button>
-          </a>
+          </Link>
           {/* <NavbarMobile/> */}
         </div>
         <div
@@ -111,39 +111,44 @@ const Navbar = () => {
           onClick={() => setIsNavOpen(!isNavOpen)}
         >
           <div className="flex flex-col items-center justify-center h-full space-y-8">
-            <a
+            <Link
               href="/"
               className="text-2xl font-medium text-gray-800 hover:text-gray-600 transition-colors duration-300 z-50"
             >
               Home
-            </a>
-            <a
-              href="/about-us"
+            </Link>
+            <Link
+              href="/projects"
               className="text-2xl font-medium text-gray-800 hover:text-gray-600 transition-colors duration-300 z-50"
             >
-              Servis Kami
-            </a>
-            <a
+              Projects
+            </Link>
+            <Link
               href="/about-us"
               className="text-2xl font-medium text-gray-800 hover:text-gray-600 transition-colors duration-300 z-50"
             >
               About Us
-            </a>
-            <a
+            </Link>
+            <Link
+              href="/services"
+              className="text-2xl font-medium text-gray-800 hover:text-gray-600 transition-colors duration-300 z-50"
+            >
+              Services
+            </Link>
+            <Link
               // href={`https://wa.me/${normalizePhoneNumber(dataWhatsapp!)}`}
               // href={catalog_link}
-              target="_blank"
-              rel="noreferrer"
+              href="/contact-us"
               className="absolute bottom-7 text-2xl font-medium text-gray-800 hover:text-gray-600 transition-colors duration-300 z-50"
             >
               <Button
-                className="!py-6 text-xl rounded-full bg-[#5CC2A7] flex justify-center items-center mx-auto"
+                className="!py-6 !text-lg rounded-full bg-[#343434] flex justify-center items-center mx-auto px-7"
               >
                 {/* <Icon icon="ic:outline-whatsapp" width="28" height="28" /> */}
-                <Icon icon="mingcute:document-3-line" className="text-xl" />
-                Katalog Terupdate
+                {/* <Icon icon="mingcute:document-3-line" className="text-xl" /> */}
+                Contact Us
               </Button>
-            </a>
+            </Link>
           </div>
         </div>
       )}
