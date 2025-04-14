@@ -37,7 +37,7 @@ const services = [
       },
     ],
     contactWord: "Cekrumahku.id",
-    url: 'https://instagram.com'
+    url: 'https://www.instagram.com/cekrumahku.id/'
   },
   {
     name: "Build",
