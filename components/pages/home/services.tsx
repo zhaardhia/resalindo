@@ -10,8 +10,7 @@ const Service = () => {
         <h2 className="md:text-4xl text-3xl font-semibold text-white mb-6">Make Your Dreams Come True</h2>
         
         <p className="text-gray-300 mb-12 max-w-6xl mx-auto font-light md:text-lg">
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-          took a galley of type and scrambled it to make a type specimen book.
+          From concept to completion, we specialize in creating spaces that inspire and endure. Whether it's designing, maintaining, or building, our team is dedicated to delivering exceptional results tailored to your needs. Let us help you turn your dreams into reality.
         </p>
         
         {/* Service Cards */}

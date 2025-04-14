@@ -47,22 +47,22 @@ export default function FAQSection() {
 
         <div className="md:col-span-2 space-y-4">
           {faqs.map((item, index) => (
-            <FadeBox
-              delay={`${index + 1}00ms`}
+            <div
+              // delay={`${index + 1}00ms`}
               key={index}
-              className={`border-b pb-4 transition-all duration-300 cursor-pointer ${
+              className={`border-b pb-4 transition-all duration-500 cursor-pointer ${
                 index === openIndex ? "pt-0" : "pt-2"
               } group hover:pt-0`}
             >
               <h4 className="md:text-3xl text-2xl font-semibold mb-1">{item.question}</h4>
               {(index === openIndex || (
-                <div className="hidden group-hover:block transition-opacity duration-300 text-sm text-gray-700">
+                <div className="hidden group-hover:block transition-opacity duration-500 text-sm text-gray-700">
                   {item.answer}
                 </div>
               )) ?? (
                 <div className="text-sm text-gray-700 block">{item.answer}</div>
               )}
-            </FadeBox>
+            </div>
           ))}
         </div>
       </div>

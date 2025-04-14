@@ -7,27 +7,27 @@ import ClientContainerAnimate from "@/components/client-container-animate";
 const data = [
   {
     title: "Site Visit",
-    description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
+    description: "We begin by visiting the project site to understand the location, scope, and specific requirements. This step allows us to gather essential information and assess the environment for the best approach.",
   },
   {
     title: "Pre Design - Final Design ",
-    description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
+    description: "Our team collaborates with you to create initial design concepts, refining them into a final design that aligns with your vision, functionality, and budget.",
   },
   {
     title: "Cost Estimating (RAB)",
-    description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
+    description: "We provide a detailed cost estimation, ensuring transparency and helping you plan your budget effectively for the entire project.",
   },
   {
     title: "Memorandum Of Understanding (MOU / SPK)",
-    description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
+    description: "Once the design and budget are finalized, we formalize the agreement through a Memorandum of Understanding or Service Agreement to ensure clarity and commitment.",
   },
   {
-    title: "Cost Estimating (RAB)",
-    description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
+    title: "Construction Execution",
+    description: "With everything in place, we begin construction, adhering to the agreed timeline, quality standards, and design specifications.",
   },
   {
     title: "Finished Construction & Handover Building",
-    description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
+    description: "Upon completion, we conduct a thorough inspection and hand over the finished building, ensuring it meets your expectations and is ready for use.",
   },
 ];
 

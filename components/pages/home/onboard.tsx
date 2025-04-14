@@ -11,7 +11,7 @@ const Onboard = () => {
       <div className='flex flex-col max-w-[700px] mx-auto gap-5 px-5'>
         <FadeBox delay='100ms' className='font-light text-center text-xl text-[#343434]'>GENERAL CONTRACTOR - ARCHITECTURE & DESIGN</FadeBox>
         <FadeBox delay='200ms' className='text-5xl font-semibold text-center text-[#343434]'>PT. Resalindo Prima Mandiri</FadeBox>
-        <FadeBox delay='300ms' className='text-center text-[#8E8B82] font-light'>PT. RPM is a lalalal tralala trilili, With experiences and professional team,
+        <FadeBox delay='300ms' className='text-center text-[#8E8B82] font-light'>PT. RPM is a general contractor company. With experiences and professional team,
         We offer services that operates in architecture and design, interior design, structure planner, construction, renovation, and more.</FadeBox>
         <FadeBox delay='400ms'>
           <Socials />

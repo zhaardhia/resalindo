@@ -10,15 +10,15 @@ const services = [
     things: [
       {
         title: "Architectural Design",
-        description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type."
+        description: "We craft innovative and functional architectural designs that reflect your vision while optimizing space, aesthetics, and sustainability. Our designs are tailored to meet your unique needs and ensure long-lasting value."
       },
       {
         title: "Interior Design",
-        description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type."
+        description: "Transform your spaces with our creative interior design solutions. We focus on blending style and functionality to create environments that are both visually stunning and perfectly suited to your lifestyle."
       },
       {
         title: "Structure Planner",
-        description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type."
+        description: "Our structure planning services ensure the stability and efficiency of your project. From initial concepts to detailed plans, we prioritize safety, durability, and precision in every aspect of the design."
       },
     ],
     url: '/contact-us'
@@ -29,11 +29,11 @@ const services = [
     things: [
       {
         title: "New House",
-        description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type."
+        description: "Ensure your new home remains in perfect condition with our comprehensive maintenance services. From routine inspections to repairs, we help preserve the beauty, functionality, and value of your property."
       },
       {
         title: "Site",
-        description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type."
+        description: "Keep your construction site running smoothly with our expert site maintenance solutions. We focus on safety, organization, and efficiency to ensure your project progresses without interruptions."
       },
     ],
     contactWord: "Cekrumahku.id",
@@ -45,11 +45,11 @@ const services = [
     things: [
       {
         title: "New Construction​",
-        description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type."
+        description: "From the ground up, we bring your vision to life with precision and expertise. Our new construction services focus on delivering high-quality, durable, and aesthetically pleasing structures tailored to your needs."
       },
       {
         title: "Renovation",
-        description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type."
+        description: "Revitalize your space with our professional renovation services. Whether it's modernizing a room or transforming an entire building, we ensure seamless execution and exceptional results that exceed expectations."
       },
     ],
     url: '/contact-us'

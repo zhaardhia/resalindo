@@ -9,19 +9,19 @@ const optionsDesign = [
   {
     key: 'design-10x12',
     kind: 'design',
-    label: 'Luas Max 10 x 12',
+    label: 'Area Max 10 × 12',
     url: 'https://mayar.id'
   },
   {
     key: 'design-15x20',
     kind: 'design',
-    label: 'Luas Max 15 x 20',
+    label: 'Area Max 15 × 20',
     url: 'https://mayar.id'
   },
   {
     key: 'design-big',
     kind: 'design',
-    label: 'Luas lebih dari 15 x 20',
+    label: 'Area greater than 15 × 20',
     url: 'https://mayar.id'
   },
 ]
@@ -30,19 +30,19 @@ const optionsMaintenance = [
   {
     key: 'maintenance-10x12',
     kind: 'maintenance',
-    label: 'Luas Max 10 x 12',
+    label: 'Area Max 10 × 12',
     url: 'https://mayar.id'
   },
   {
     key: 'maintenance-15x20',
     kind: 'maintenance',
-    label: 'Luas Max 15 x 20',
+    label: 'Area Max 15 × 20',
     url: 'https://mayar.id'
   },
   {
     key: 'maintenance-big',
     kind: 'maintenance',
-    label: 'Luas > 15 x 20',
+    label: 'Area greater than 15 × 20',
     url: 'https://mayar.id'
   },
 ]
@@ -51,19 +51,19 @@ const optionsBuild = [
   {
     key: 'build-10x12',
     kind: 'build',
-    label: 'Luas Max 10 x 12',
+    label: 'Area Max 10 × 12',
     url: 'https://mayar.id'
   },
   {
     key: 'build-15x20',
     kind: 'build',
-    label: 'Luas Max 15 x 20',
+    label: 'Area Max 15 × 20',
     url: 'https://mayar.id'
   },
   {
     key: 'build-big',
     kind: 'build',
-    label: 'Luas > 15 x 20',
+    label: 'Area greater than 15 × 20',
     url: 'https://mayar.id'
   },
 ]

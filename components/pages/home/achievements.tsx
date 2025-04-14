@@ -47,8 +47,7 @@ const Achievements = () => {
           
           <div>
             <p className="text-gray-700">
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-              took a galley of type and scrambled it to make a type specimen book.
+              We take pride in transforming visions into reality. With years of expertise in construction and design, our team delivers innovative solutions that blend functionality, aesthetics, and sustainability. Explore our portfolio to see how we bring spaces to life.
             </p>
           </div>
         </div>
@@ -120,8 +119,8 @@ const Achievements = () => {
       <div className='max-w-7xl mx-auto'>
         <div className="flex flex-wrap justify-center gap-4">
           {projects.map((project, index) => (
-            <FadeBox 
-              delay={`${index + 1}00ms`}
+            <div 
+              // delay={`${index + 1}00ms`}
               className={`
                 relative rounded-lg overflow-hidden cursor-pointer
                 ${
@@ -154,7 +153,7 @@ const Achievements = () => {
                   <p className="text-sm text-white/80">{project.subtitle}</p>
                 </div>
               </Link>
-            </FadeBox>
+            </div>
           ))}
         </div>
       </div>
